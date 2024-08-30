@@ -1,0 +1,94 @@
+.quienes-somos {
+    padding: 2rem;
+    background-color: white;
+}
+
+.quienes-somos .section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #A1D6B2;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quienes-somos .section h2 {
+    color:#125B6A;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.quienes-somos .section p {
+    color: var(--color-text);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 40px;
+    background-color: #f1f3c2;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Contenedor donde va el mapa y el cuadrito con dirección */
+.location-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Contenedor del mapa */
+.map-container iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Contenedor de la dirección */
+.address-container {
+    background-color:#e66f98c7; /* Color de fondo más suave que el de CC2 */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px  #333333;
+    display: inline-block;
+    max-width: 200px; 
+    text-align: left;
+    margin-left: 10px; /* Espacio entre el mapa y el contenedor */
+}
+
+.address-container p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333333; 
+    line-height: 1.4;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .location-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .map-container iframe, 
+    .address-container {
+        width: 100%;
+    }
+
+    .quienes-somos .section {
+        padding: 1rem;
+    }
+
+    .quienes-somos .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .quienes-somos .section p {
+        font-size: 1rem;
+    }
+}

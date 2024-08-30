@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    margin: 0;
+    padding: 20px;
+}
+
+.program-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #CEDF9F;
+    border-radius: 8px;
+    background-color: #A1D6B2;
+}
+
+#programSearch {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 2px solid #CEDF9F;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #084c61;
+    text-align: center;
+    font-size: 32px;
+}
+
+h3 {
+    color: #084c61;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+}
+
+strong {
+    color: #084c61;
+}

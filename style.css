@@ -1,0 +1,289 @@
+/* Paleta de Colores - Fuente: https://colorhunt.co/palette/a1d6b2cedf9ff1f3c2e8b86d*/
+:root {
+  --color-primary: #A1D6B2;  /* Verde suave */
+  --color-secondary: #CEDF9F; /* Verde oliva */
+  --color-accent: #F1F3C2;    /* Crema claro */
+  --color-background: #E8B86D; /* Mostaza */
+  --color-text: #333333;      /* Gris oscuro */
+  --color-CC:#125B6A;
+  --color-CC2:#C85A81;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--color-text);
+  background-color: white;
+  line-height: 1.6;
+}
+
+/*.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}*/
+/* Estilo del Header */
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  flex-shrink: 0;
+}
+
+header .logo img {
+  max-width: 100px;
+  vertical-align: middle; /* Asegura que el logo esté alineado verticalmente */
+}
+
+header nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 2rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+header nav ul li {
+  margin-left: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+header nav ul li:last-child {
+  margin-right: 15px;
+}
+
+/* Estilo del Menú Hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 25px; 
+  height: 30px;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links.active {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  background-color: white;
+  width: 80%;
+  text-align: center;
+}
+
+.nav-links.active li {
+  margin: 1rem 0;
+}
+
+/* Responsivo para móvil */
+@media (max-width: 768px) {
+  header {
+      padding-right: 15px;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .hamburger.active span:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+/* Estilos para sumate */
+header nav ul li a.special-link {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+header nav ul li a.special-link:hover {
+  background-color: var(--color-text);
+}
+
+
+
+
+/* Contrstruyendo caminos Intro */
+.intro {
+  background-color:white;
+  color: var(--color-text);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.intro .btn {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.intro .btn:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Sección General */
+.section {
+  padding: 15px ;
+  background-color: var(--color-accent);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--color-CC);
+}
+
+
+/* Programas */
+.programas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.programa {
+  background-color: var(--color-CC2);
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.programa2 {
+  background-color: rgb(128, 196, 238);
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.programa3 {
+  background-color: rgb(109, 243, 109);
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.programa h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+/* Contacto */
+.contacto-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.contacto-item h3 {
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
+.contacto-item p {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsivo para móvil */
+@media (max-width: 768px) {
+  .programas-grid {
+      grid-template-columns: 1fr;
+  }
+
+  header nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .hero .btn {
+      font-size: 0.875rem;
+  }
+
+  .contacto-info {
+      flex-direction: column;
+  }
+
+  .contacto-item {
+      margin-bottom: 1rem;
+  }
+}
